@@ -143,7 +143,7 @@ export class DatabaseAPIservicesServiceService {
 
   //for pdf
   GenerateInvoicePDF(invoiceID:any){
-    return this.httpClient.get('https://localhost:7235/api/Bills/GeneratePDF?id='+invoiceID,{observe:'response',responseType:'blob'});
+    return this.httpClient.get('https://localhost:7235/api/Invoices/GeneratePDF?id='+invoiceID,{observe:'response',responseType:'blob'});
   }
 
   GenerateBillPDF(billID:any){
